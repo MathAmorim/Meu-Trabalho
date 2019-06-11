@@ -6,7 +6,7 @@ function pronto() {
     puxa(x,y);
 }
 
-function puxa(valor,test) {
+function puxa(valor,resposta) {
     var xhttp;
     xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -14,12 +14,7 @@ function puxa(valor,test) {
             document.getElementById("respcheck").innerHTML = this.responseText;
         }
     };
-    xhttp.open("GET", "../game/verifica.php?q=" + valor+ "&&w=" + test, true);
+    xhttp.open("GET", "../game/verifica.php?q=" + valor+ "&w=" + resposta, true);
     xhttp.send();
-    // verifica();
+    
 }
-
-// function verifica() {
-//     var auti = document.getElementById("resp").;
-//     console.log(auti.); 
-// }

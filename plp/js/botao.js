@@ -193,13 +193,9 @@ document.getElementById("delete").onclick = function () {
 function delet() {
     document.getElementById("resp").innerHTML = "";
 }
-// //funcao de verificação do game
-// $('#pronto').on('click', function() {
-//     var clone = document.getElementById("resp").textContent;
-//     if (clone == "correr") {
-//         document.getElementById("aqui").innerHTML = clone;
-//     } else {
-//         document.getElementById("aqui").innerHTML = "nao foi";
-//     }
-// });
-// //fim da verificacao
+function redireciona(){
+    window.location.replace("../index.html");
+}
+function refazer(){
+    window.location.reload();
+}
